@@ -6,7 +6,9 @@
 Comme tu peux le remarquer nos résultats sont très proches. 
 J'identifie une différence sur ton rendu au niveau des cardinalités entre les entités PRODUCT et USER sur la relation de LIKE.
 En effet tu as vu juste, il s'agit bien d'une relation ManyToMany. En revanche la cardinalité ne peut être 1,1.
+
 Un utilisateur peut LIKER plusieurs produits s'il le souhaite mais il n'est pas obligé. On peut donc traduire ce comportement par une cardinalité minimale de 0 et maximale de N
+
 Un produit peut être LIKÉ par l'intégralité des utilisateurs. On peut également avoir un produit LIKÉ par personnes. On a donc une cardinalité minimale de 0 et maximale de N
 
 
